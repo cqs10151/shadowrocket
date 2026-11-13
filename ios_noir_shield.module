@@ -1,4 +1,4 @@
-#!name=🛡️ iOS-NOIR Privacy Shield (定制隐私护盾)
+#!name=iOS-NOIR Privacy Shield (定制隐私护盾)
 #!desc=拦截数字联盟跨App设备DNA指纹(shuzilm.cn)、JSPatch热更新后门与国内大厂遥测广告。
 #!system=ios
 
@@ -63,7 +63,7 @@ DOMAIN-SUFFIX,adash.m.taobao.com,REJECT
 DOMAIN-SUFFIX,adashx.m.taobao.com,REJECT
 DOMAIN-SUFFIX,adashxgc.ut.taobao.com,REJECT
 DOMAIN-SUFFIX,h-adashx.ut.taobao.com,REJECT
-DOMAIN-SUFFIX,ynuf.aliapp.org,REJECT
+#DOMAIN-SUFFIX,ynuf.aliapp.org,REJECT
 DOMAIN-SUFFIX,log.mmstat.com,REJECT
 DOMAIN-SUFFIX,wgo.mmstat.com,REJECT
 
