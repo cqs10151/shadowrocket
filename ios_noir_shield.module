@@ -14,8 +14,10 @@
 #DOMAIN-SUFFIX,id.189.cn,REJECT
 
 # === 1.5 数字联盟(设备DNA指纹) / JSPatch / 秒针 / 国双 ===
+# 注：若银行/金融 App 提示“设备环境异常”，可尝试注释 shuzilm.cn
 DOMAIN-SUFFIX,shuzilm.cn,REJECT
 DOMAIN-SUFFIX,jspatch.com,REJECT
+# 注：mob.com 与主配置 zztfly.com 同属掌之淘，若 App 分享/秒验异常可注释
 DOMAIN-SUFFIX,mob.com,REJECT
 DOMAIN-SUFFIX,miaozhen.com,REJECT
 DOMAIN-SUFFIX,admaster.com,REJECT
@@ -40,8 +42,9 @@ DOMAIN-SUFFIX,is.snssdk.com,REJECT
 DOMAIN-SUFFIX,extlog.snssdk.com,REJECT
 DOMAIN-SUFFIX,log.snssdk.com,REJECT
 DOMAIN-SUFFIX,toblog.ctobsnssdk.com,REJECT
-DOMAIN-SUFFIX,mssdk.bytedance.com,REJECT
 DOMAIN-SUFFIX,tobapplog.ctobsnssdk.com,REJECT
+# 注：字节风控 SDK，若抖音/番茄等频繁弹验证码可注释此行
+DOMAIN-SUFFIX,mssdk.bytedance.com,REJECT
 
 # === 3. 腾讯广点通 / 微信 Matrix 遥测 / 灯塔统计 ===
 DOMAIN-SUFFIX,gdt.qq.com,REJECT
@@ -49,20 +52,18 @@ DOMAIN-SUFFIX,e.qq.com,REJECT
 DOMAIN-SUFFIX,btrace.qq.com,REJECT
 DOMAIN-SUFFIX,oth.eve.mdt.qq.com,REJECT
 DOMAIN-SUFFIX,otheve.beacon.qq.com,REJECT
-DOMAIN-SUFFIX,tpns.tencent.com,REJECT
 DOMAIN-SUFFIX,bugly.qq.com,REJECT
 DOMAIN-SUFFIX,rqd.qq.com,REJECT
+# 腾讯移动推送 TPNS（已注释：防止误杀国内 App 推送注册；若需强拦截可取消注释）
+#DOMAIN-SUFFIX,tpns.tencent.com,REJECT
 
 # === 4. 阿里百川 / 手淘 AMNet 埋点 / 友盟 Umeng ===
 DOMAIN-SUFFIX,umeng.com,REJECT
 DOMAIN-SUFFIX,umengcloud.com,REJECT
 DOMAIN-SUFFIX,umsns.com,REJECT
-DOMAIN-SUFFIX,alog.umeng.com,REJECT
 DOMAIN-SUFFIX,ut.taobao.com,REJECT
 DOMAIN-SUFFIX,adash.m.taobao.com,REJECT
 DOMAIN-SUFFIX,adashx.m.taobao.com,REJECT
-DOMAIN-SUFFIX,adashxgc.ut.taobao.com,REJECT
-DOMAIN-SUFFIX,h-adashx.ut.taobao.com,REJECT
 #DOMAIN-SUFFIX,ynuf.aliapp.org,REJECT
 DOMAIN-SUFFIX,log.mmstat.com,REJECT
 DOMAIN-SUFFIX,wgo.mmstat.com,REJECT
@@ -85,7 +86,7 @@ DOMAIN-SUFFIX,th.pinduoduo.com,REJECT
 #DOMAIN-SUFFIX,online-metrix.net,REJECT
 #DOMAIN-SUFFIX,h.online-metrix.net,REJECT
 
-# === 7. 第三方统计SDK ===
+# === 7. 第三方推送与统计 SDK ===
 DOMAIN-SUFFIX,jpush.cn,REJECT
 DOMAIN-SUFFIX,jiguang.cn,REJECT
 DOMAIN-SUFFIX,getui.com,REJECT
@@ -93,5 +94,8 @@ DOMAIN-SUFFIX,igexin.com,REJECT
 DOMAIN-SUFFIX,talkingdata.net,REJECT
 DOMAIN-SUFFIX,sensorsdata.cn,REJECT
 DOMAIN-SUFFIX,growingio.com,REJECT
+
 # === 8. 个人新增 ===
+DOMAIN-SUFFIX,zztfly.com,REJECT
 DOMAIN-SUFFIX,singular.net,REJECT
+DOMAIN-SUFFIX,gepush.com,REJECT
