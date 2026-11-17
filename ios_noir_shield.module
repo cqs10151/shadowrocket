@@ -93,3 +93,5 @@ DOMAIN-SUFFIX,igexin.com,REJECT
 DOMAIN-SUFFIX,talkingdata.net,REJECT
 DOMAIN-SUFFIX,sensorsdata.cn,REJECT
 DOMAIN-SUFFIX,growingio.com,REJECT
+# === 8. 个人新增 ===
+DOMAIN-SUFFIX,singular.net,REJECT
